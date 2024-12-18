@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="hack4.css"> <!-- Make sure this is in your project folder -->
+</head>
+<body>
+    <div id="app">
+        <!-- Menubar with Watchlist Button -->
+        <header>
+            <h1>Movie Search App</h1>
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <!-- Watchlist Button -->
+            <button id="watchlist-button">Watchlist</button>
+        </header>
+        
+        <!-- Movie Results Grid -->
+        <div id="movie-grid"></div>
+        
+        <!-- Movie Details Modal -->
+        <div id="movie-details" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div id="movie-info"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="hack4.js"></script> <!-- Make sure this is in your project folder -->
+</body>
+</html>

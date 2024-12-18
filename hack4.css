@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background for the entire page */
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#watchlist-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie-item img:hover {
+    transform: scale(1.1); /* Zoom effect on click */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    position: relative; 
+}
+
+.modal-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.modal-content div {
+    flex: 1;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.modal-content p {
+    margin: 5px 0;
+}
+
+.close-button {
+    font-size: 32px; /* Increase font size for a larger X */
+    width: 50px; /* Increase width */
+    height: 50px; /* Increase height */
+    display: flex; /* Flexbox to center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor: pointer;
+    background-color: #555; /* Background color for visibility */
+    color: #fff; /* Text color */
+    border-radius: 50%; /* Rounded button */
+    position: absolute; /* Position it at the top left */
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Position it on the left side */
+    font-weight: bold; /* Make the X bold */
+    border: 2px solid #fff; /* Optional: Add border for visibility */
+}
+
+.movie-details-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.movie-details-content img {
+    margin-right: 20px;
+}
+
+.movie-details-content .details {
+    flex: 1;
+}
+
+.movie-details-content h2 {
+    font-size: 24px;
+}
+
+.movie-details-content p {
+    margin: 5px 0;
+}
